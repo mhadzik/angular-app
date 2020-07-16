@@ -1,0 +1,68 @@
+@import "../../style/variables.scss";
+
+
+.logo {
+  &_img {}
+
+  &_text {
+    font-family: $blackjack-font;
+    font-size: 35px;
+    color: white;
+    margin-left: 5px;
+  }
+
+  &_container {
+    margin-top: 5px;
+  }
+}
+
+.header {
+  background-color: $background-green;
+  background-image: url('../../assets/images/profile-background.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+  width: auto;
+
+  &_row {
+    margin-top: 50px;
+  }
+
+  &_button {
+    border: none;
+    background: transparent;
+    margin-top: 15px;
+
+    &--social {
+      margin-bottom: 20px;
+      border: none;
+      background: transparent;
+    }
+  }
+
+  &_h1 {
+    font-family: $blackjack-font;
+    font-size: 40px;
+    color: white;
+
+    &--2 {
+      color: $background-red;
+      font-family: $blackjack-font;
+      font-size: 40px;
+    }
+  }
+
+  &_p {
+    color: white;
+    font-family: $fina-font;
+    margin-bottom: 0px;
+    margin-top: 15px;
+    font-size: 20px;
+
+    &--2 {
+      font-family: $fina-font;
+      font-size: 15px;
+      color: $background-red
+    }
+  }
+
+}

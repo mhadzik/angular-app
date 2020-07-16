@@ -1,0 +1,9 @@
+<div class="mainScreen">
+
+  <app-side-drawer [isVisible]="isVisible"></app-side-drawer>
+
+  <div class="screen" [ngClass]="{'screen_moved' : isVisible, 'screen_notmoved' : !isVisible}">
+    <app-header (toggle)="toggleSideDrawer()"></app-header>
+    <app-menu-options></app-menu-options>
+  </div>
+</div>

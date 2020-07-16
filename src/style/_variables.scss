@@ -1,0 +1,17 @@
+@import url(https://pl.allfont.net/allfont.css?fonts=new-cicle-fina);
+
+@font-face {
+  font-family: 'BlackJackRegular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('BlackJackRegular'), url('../assets/fonts/black_jack.woff') format('woff');
+}
+
+$blackjack-font: 'BlackJackRegular';
+$fina-font: 'New Cicle Fina',
+arial;
+$background-green: #034d59;
+$background-red: #f56f6c;
+$hr-red: #fc8986;
+$background-black: #252931;
+$drawer-font-c: #9da2aa;

@@ -1,0 +1,15 @@
+<div class="sideDrawer" [ngClass]="{'sideDrawer_active' : isVisible, 'sideDrawer_inactive' : !isVisible}">
+  <div class="">
+    <app-drawer-profile></app-drawer-profile>
+    <app-drawer-menu></app-drawer-menu>
+    <section class="sideDrawer_signout">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <button class="sideDrawer_btn"><img src="../../assets/images/signout-icon.png" alt=""></button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>

@@ -1,0 +1,27 @@
+@import "../../style/variables.scss";
+
+.mainScreen {
+  overflow: hidden;
+  background-color: $background-black;
+}
+
+.screen {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  transition: transform 700ms ease-out;
+  overflow: hidden;
+  background-color: $background-red;
+
+
+  &_moved {
+    transform: translateX(80%);
+  }
+
+
+  &_notmoved {
+    transform: translateX(0);
+  }
+
+}
