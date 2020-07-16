@@ -1,5 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { MenuBar } from '../shared/menuBar.model'
+import { MenuBar } from '../../../../shared/menu-bar.model'
+
+
 
 @Component({
   selector: 'app-drawer-menu-item',
@@ -9,6 +11,16 @@ import { MenuBar } from '../shared/menuBar.model'
 export class DrawerMenuItemComponent implements OnInit {
   @Input()
   menuBar: MenuBar
+
+
+  mailVisible = false;
+
+  showMails() {
+    if (this.menuBar.imgPath == '../../assets/images/mail-icon.png') {
+      this.mailVisible = !this.mailVisible
+      this.menuBar.isOpen = !this.menuBar.isOpen
+    }
+  }
 
   constructor() { }
 

@@ -1,0 +1,62 @@
+@import "../../../../../style/variables";
+
+.drawer {
+  &_text {
+    color: $drawer-font-c;
+    font-size: 20px;
+    font-family: $fina-font;
+    margin-left: 15px;
+
+    &--2 {
+      color: white;
+      font-family: $fina-font;
+      font-size: 18px;
+      margin-top: 0;
+      margin-bottom: 0;
+
+    }
+
+    &--mail {
+      color: white;
+      font-family: $fina-font;
+      font-size: 14px;
+      padding-top: 10px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid $hr-red;
+    }
+  }
+
+  &_h2 {
+    color: $hr-red;
+    font-size: 16px;
+    font-family: $fina-font;
+    margin-top: 25px;
+  }
+
+  &_btn {
+    border: none;
+    background: transparent;
+  }
+
+  &_hr {
+    border: 1px solid $drawer-font-c;
+    width: 100%;
+  }
+
+  &_item-row {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  &_mails {
+    padding: 15px 5px;
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+
+  &_col-2 {
+    background-color: $elipse-color;
+    border-radius: 30px;
+    width: 100%;
+  }
+}

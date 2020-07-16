@@ -1,8 +1,7 @@
-@import "../../style/variables.scss";
+@import "../../../style/variables";
 
 
 .logo {
-  &_img {}
 
   &_text {
     font-family: $blackjack-font;
@@ -18,7 +17,7 @@
 
 .header {
   background-color: $background-green;
-  background-image: url('../../assets/images/profile-background.png');
+  background-image: url('../../../assets/images/profile-background.png');
   background-repeat: no-repeat;
   background-position: center top;
   width: auto;

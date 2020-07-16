@@ -1,18 +1,19 @@
-@import "../../style/variables.scss";
+@import "../../../style/variables.scss";
 
 .sideDrawer {
   position: absolute;
   left: 0;
   top: 0;
   width: 80%;
-  box-sizing: border-box;
+  display: block;
   transition: transform 700ms ease-out;
   background-color: $background-black;
   padding-left: 5px;
   padding-right: 5px;
-  overflow: hidden;
-
-
+  overflow-x: hidden;
+  overflow-y: scroll;
+  z-index: 5;
+  height: 100%;
 
   &_active {
     transform: translateX(0);
@@ -31,7 +32,6 @@
   &_signout {
     padding-top: 80px;
     background-color: $background-black;
-    height: 100%;
   }
 
 }

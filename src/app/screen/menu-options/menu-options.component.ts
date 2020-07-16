@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Notification } from '../shared/notification.model'
+import { Notification } from '../../shared/notification.model'
 
 
 @Component({
@@ -16,6 +16,10 @@ export class MenuOptionsComponent implements OnInit {
 
 
   ]
+
+  onDelete(index) {
+    this.notifications.splice(index, 1);
+  }
   constructor() { }
 
   ngOnInit(): void {

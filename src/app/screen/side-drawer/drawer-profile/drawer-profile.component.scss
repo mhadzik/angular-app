@@ -1,10 +1,12 @@
-@import "../../style/variables.scss";
+@import "../../../../style/variables";
 
 
 .drawer {
   &_btn {
     background: transparent;
     border: none;
+    margin-top: 15px;
+
   }
 
   &_row {
@@ -25,13 +27,13 @@
   }
 
   &_img {
-    background-image: url("../../assets/images/profile-elipse.png");
+    background-image: url("../../../../assets/images/profile-elipse.png");
     background-size: cover;
     background-position: 50% 50%;
     border-radius: 50%;
     overflow: hidden;
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
     margin-bottom: 15px;
 
     &-img {

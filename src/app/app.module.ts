@@ -5,14 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ScreenComponent } from './screen/screen.component';
-import { HeaderComponent } from './header/header.component';
-import { MenuOptionsComponent } from './menu-options/menu-options.component';
-import { SideDrawerComponent } from './side-drawer/side-drawer.component';
-import { MenuOptionComponent } from './menu-option/menu-option.component';
-import { DrawerProfileComponent } from './drawer-profile/drawer-profile.component';
-import { DrawerMenuComponent } from './drawer-menu/drawer-menu.component';
-import { DrawerMenuItemComponent } from './drawer-menu-item/drawer-menu-item.component';
-import { MenuOptionDirective } from './menu-option.directive';
+import { HeaderComponent } from './screen/header/header.component';
+import { MenuOptionsComponent } from './screen/menu-options/menu-options.component';
+import { SideDrawerComponent } from './screen/side-drawer/side-drawer.component';
+import { MenuOptionComponent } from './screen/menu-options/menu-option/menu-option.component';
+import { DrawerProfileComponent } from './screen/side-drawer/drawer-profile/drawer-profile.component';
+import { DrawerMenuComponent } from './screen/side-drawer/drawer-menu/drawer-menu.component';
+import { DrawerMenuItemComponent } from './screen/side-drawer/drawer-menu/drawer-menu-item/drawer-menu-item.component';
 
 
 
@@ -27,7 +26,6 @@ import { MenuOptionDirective } from './menu-option.directive';
     DrawerProfileComponent,
     DrawerMenuComponent,
     DrawerMenuItemComponent,
-    MenuOptionDirective
 
   ],
   imports: [

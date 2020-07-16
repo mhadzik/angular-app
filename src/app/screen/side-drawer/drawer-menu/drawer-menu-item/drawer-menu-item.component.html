@@ -1,0 +1,37 @@
+<div class="container">
+  <hr class="drawer_hr">
+  <div class="row align-self-center drawer_item-row" (click)="showMails()">
+    <div class=" col-2">
+      <button class="drawer_btn"><img [src]=" menuBar.imgPath" alt=""></button>
+    </div>
+    <div class="col-8">
+      <div class="drawer_title d-flex align-items-center">
+        <p class="drawer_text">{{menuBar.name}}</p>
+      </div>
+      <div *ngIf="mailVisible == true" class="drawer_mails">
+        <div class="drawer_mail">
+          <h2 class="drawer_h2"> Mail from: Mark Standford</h2>
+          <p class="drawer_text--mail">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas,
+            officia assumenda? Placeat debitis distinctio sequi officia quis nobis magnam, eveniet ipsum perferendis
+            omnis eius
+            quisquam esse delectus tempora nostrum dolore!</p>
+        </div>
+        <div class="drawer_mail">
+          <h2 class="drawer_h2"> Mail from: Paul Frankfurt</h2>
+          <p class="drawer_text--mail">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas,
+            officia
+            assumenda? Placeat debitis distinctio sequi officia quis nobis magnam, eveniet ipsum perferendis omnis
+            eius
+            quisquam esse delectus tempora nostrum dolore!</p>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-2 text-center">
+      <div class="drawer_col-2">
+        <p *ngIf="menuBar.number !== 0" class="drawer_text--2">{{menuBar.number}}</p>
+      </div>
+    </div>
+  </div>
+
+</div>

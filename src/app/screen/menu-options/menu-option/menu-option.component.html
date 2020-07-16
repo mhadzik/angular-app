@@ -6,14 +6,13 @@
             <div class="col-2 menu_col offset-1">
               <img class="menu_img" [src]="notification.imgPath" alt="">
             </div>
-            <div class="col-9 menu_col">
+            <div class="col-9 menu_col menu_col--2">
               <span class="menu_text-small">{{notification.title}}</span>
               <span class="menu_text-small--2 menu_text-small">by: {{notification.author}}</span>
               <p class="menu_text-big">{{notification.text}}</p>
             </div>
           </div>
         </div>
-
         <div class="container screenSlide"
           [ngClass]="{'screenSlide_moved' : notification.isMoved, 'screenSlide_notmoved' : !notification.isMoved}"
           (click)="moveChange()">
@@ -22,10 +21,12 @@
               <button class="screenSlide_btn"><img src="../../assets/images/preview-icon.png" alt=""></button>
             </div>
             <div class="col-3 menu_col">
-              <button class="screenSlide_btn"><img src="../../assets/images/heart-icon.png" alt=""></button>
+              <button class="screenSlide_btn"><img [src]="notification.isLiked == true ? isLiked : notLiked" alt=""
+                  (click)="likeChange()"></button>
             </div>
             <div class="col-3 menu_col">
-              <button class="screenSlide_btn"><img src="../../assets/images/bin-icon.png" alt=""></button>
+              <button class="screenSlide_btn"><img src="../../assets/images/bin-icon.png" (click)="deleteItem()"
+                  alt=""></button>
             </div>
           </div>
 
